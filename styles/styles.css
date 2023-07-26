@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@400;600;700&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.logo {
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  width: 30%;
+  position: relative;
+  top: -50px;
+}
+
+.intro {
+  padding-top: 0;
+  margin: 0rem 1rem 3rem 1rem;
+  background-color: #B3E6F9;
+  border-radius: 0.7rem;
+}
+.intro p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding: 1rem;
+  text-align: left;
+  line-height: 1.25rem;
+}
+.intro h3 {
+  margin-bottom: 0;
+  font-family: "Palanquin", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+.highlights {
+  margin: 3rem;
+  text-align: center;
+}
+.highlights h2 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+}
+.highlights h3 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.highlights p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-align: left;
+  margin: 0.3rem;
+  padding: 0;
+}
+
+.popupOverlay {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  display: flex;
+  padding: 2rem;
+  background-color: #FFFFFF;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  visibility: hidden;
+}
+.popupOverlay .popupcontent {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: #B3E6F9;
+  border-radius: 8px;
+  width: 35rem;
+  height: 1520px;
+  left: 0;
+  top: 0;
+  padding: 2rem;
+  margin: 0;
+  text-align: center;
+  line-height: 1rem;
+}
+
+.popupOverlay.active {
+  visibility: visible;
+}
+
+.main.active {
+  visibility: hidden;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.main .main-screen {
+  width: 300px;
+  height: auto;
+  padding: 0.5rem;
+  background-color: #FFFFFF;
+}
+.main .main-screen .letter {
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  width: 40%;
+  position: relative;
+}
+
+.awards {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5.5rem;
+}
+.awards .block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 220px;
+  margin: 0.5rem;
+  justify-content: center;
+  background-color: #B3E6F9;
+  border-radius: 1rem;
+}
+.awards .block h3 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+.awards .block p {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  line-height: 2rem;
+  width: 220px;
+  padding: 0.1rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between; /* Safari */
+  position: sticky;
+  top: 200px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.navigation .nav-btn {
+  margin: 1rem;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+footer .pages {
+  margin: 0.3rem;
+  font-family: "Palanquin", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: #006892;
+}
+
+/* Finance */
+.finance-title {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
+  font-size: 0.6rem;
+  text-align: center;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.finance h3 {
+  text-align: left;
+  font-family: "Palanquin", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.finance p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.dividend {
+  margin-bottom: 3rem;
+}
+.dividend h3 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+}
+.dividend p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  line-height: 1.25rem;
+}
+
+.stock p {
+  text-align: left;
+}
+.stock h3 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+.perform {
+  margin-bottom: 3rem;
+}
+.perform h3 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+}
+.perform p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  line-height: 1.25rem;
+}
+
+.graph .graph-title {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 2rem;
+}
+.graph .graph-wrapper-first {
+  display: grid;
+  grid-template-areas: "A B" "A C";
+  font-family: "Palanquin", sans-serif;
+  font-weight: 400;
+  font-size: 0.6rem;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: #6AD5FF;
+  border-radius: 8px;
+  color: #006892;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  grid-template-rows: 1fr 0.1fr;
+  grid-template-columns: 0.5fr 2fr;
+  margin-bottom: 3rem;
+}
+.graph .graph-wrapper-first .box-1 {
+  grid-area: A;
+}
+.graph .graph-wrapper-first .box-8 {
+  grid-area: B;
+}
+.graph .graph-wrapper-first .box-8 img {
+  width: 100%;
+}
+.graph .graph-wrapper-first .box-9 {
+  grid-area: C;
+}
+.graph .graph-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 3rem;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+  font-family: "Palanquin", sans-serif;
+  font-weight: 400;
+  font-size: 0.6rem;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: #6AD5FF;
+  border-radius: 8px;
+  color: #006892;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.sales {
+  margin-bottom: 3rem;
+}
+.sales p {
+  text-align: left;
+}
+.sales h3 {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+/* executives */
+.exec-title {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
+  font-size: 0.6rem;
+  text-align: center;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.execs .exec-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 2.3fr;
+  margin-bottom: 3rem;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+  font-family: "Palanquin", sans-serif;
+  font-weight: 400;
+  font-size: 0.6rem;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: #6AD5FF;
+  border-radius: 8px;
+  color: #006892;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.executive {
+  display: flex;
+  margin-bottom: 3rem;
+}
+.executive .headshot img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  float: left;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+.executive p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  line-height: 1.25rem;
+}
+
+.one, .three, .five, .seven, .nine {
+  padding-top: 0;
+  margin: 1rem 1rem 3rem 0rem;
+  background-color: #B3E6F9;
+  border-radius: 0.7rem;
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+  .highlight-content {
+    margin-left: 4rem;
+  }
+  .awards {
+    padding-left: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .awards {
+    padding-left: 8.5rem;
+  }
+  .navigation img {
+    width: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .intro p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .awards {
+    padding-left: 1.5rem;
+  }
+  .highlight-content {
+    -moz-columns: 2;
+         columns: 2;
+    margin-left: 10rem;
+  }
+  .popupOverlay {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    visibility: visible;
+    position: relative;
+  }
+  .popupOverlay .popupcontent {
+    width: 50rem;
+    height: 950px;
+  }
+  .popupOverlay .popupcontent .btn {
+    visibility: hidden;
+  }
+  .main {
+    visibility: hidden;
+  }
+  .graph .graph-wrapper {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  .graph .graph-wrapper-first {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  .execs .exec-wrapper {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .awards {
+    padding-left: 14.5rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
